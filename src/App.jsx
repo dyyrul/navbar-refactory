@@ -8,7 +8,7 @@ function App() {
           <div className="container">
             <div className="flex justify-between h-20 items-center">
               <div className="px-5">
-                <a href="" className="font-bold text-2xl">
+                <a href="" className="font-bold text-2xl text-slate-800">
                   REFACTORY
                 </a>
               </div>
