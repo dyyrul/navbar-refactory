@@ -1,35 +1,79 @@
-import { useState } from 'react'
-import reactLogo from './assets/react.svg'
-import viteLogo from '/vite.svg'
-import './App.css'
+import Navbar from "./assets/Navbar";
 
 function App() {
-  const [count, setCount] = useState(0)
-
   return (
     <>
-      <div>
-        <a href="https://vitejs.dev" target="_blank">
-          <img src={viteLogo} className="logo" alt="Vite logo" />
-        </a>
-        <a href="https://react.dev" target="_blank">
-          <img src={reactLogo} className="logo react" alt="React logo" />
-        </a>
-      </div>
-      <h1>Vite + React</h1>
-      <div className="card">
-        <button onClick={() => setCount((count) => count + 1)}>
-          count is {count}
-        </button>
-        <p>
-          Edit <code>src/App.jsx</code> and save to test HMR
-        </p>
-      </div>
-      <p className="read-the-docs">
-        Click on the Vite and React logos to learn more
-      </p>
+      <Navbar>
+        <header className="w-full bg-cyan-400 fixed">
+          <div className="container">
+            <div className="flex justify-between h-20 items-center">
+              <div className="px-5">
+                <a href="" className="font-bold text-2xl">
+                  REFACTORY
+                </a>
+              </div>
+              <nav className="flex justify-evenly">
+                <ul className="flex justify-items-end">
+                  <li className="px-4">
+                    <a
+                      href="#"
+                      className="text-slate-800 font-normal hover:text-slate-50 text-lg px-4"
+                    >
+                      Home
+                    </a>
+                  </li>
+                  <li className="px-4">
+                    <a
+                      href="#"
+                      className="text-slate-800 font-normal hover:text-slate-50 text-lg px-4"
+                    >
+                      About
+                    </a>
+                  </li>
+                  <li className="px-4">
+                    <a
+                      href="#"
+                      className="text-slate-800 font-normal hover:text-slate-50 text-lg px-4"
+                    >
+                      Contact
+                    </a>
+                  </li>
+                  <li className="px-4">
+                    <a
+                      href="#"
+                      className="text-slate-800 font-normal hover:text-slate-50 text-lg px-4"
+                    >
+                      Gallery
+                    </a>
+                  </li>
+                </ul>
+              </nav>
+              <div className="px-5">
+                <ul className="flex">
+                  <li>
+                    <a
+                      href="#"
+                      className="bg-cyan-100 hover:bg-slate-200 text-gray-800 rounded-md py-2 px-4 ml-4"
+                    >
+                      Daftar
+                    </a>
+                  </li>
+                  <li>
+                    <a
+                      href="#"
+                      className="bg-orange-100 hover:bg-slate-200 text-gray-800 rounded-md py-2 px-4 ml-4"
+                    >
+                      Log In
+                    </a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </header>
+      </Navbar>
     </>
-  )
+  );
 }
 
-export default App
+export default App;
